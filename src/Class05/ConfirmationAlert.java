@@ -16,21 +16,27 @@ public class ConfirmationAlert {
 
         //use switchTo
       Alert alert=driver.switchTo().alert(); // this popup only have OK option
-      Thread.sleep(2000);
+      Thread.sleep(5000);
       alert.accept();
 
       // This popup has 2 option OK and CANCEL
       // this HW
+       driver.findElement(By.xpath("//button[@class='btn btn-default btn-lg']")).click();
+       Alert alert1=driver.switchTo().alert();
+       Thread.sleep(5000);
+       alert1.dismiss();
 
 
         // click on the Alert and entering the input value
         driver.findElement(By.xpath("//button[@onclick='myPromptFunction()']")).click();
+        Thread.sleep(5000);
 
         //switch focus to alert
         alert.sendKeys("Mouhsine");
 
         //accept it
         alert.accept();
+
 
 
 
