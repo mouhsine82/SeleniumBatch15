@@ -54,7 +54,7 @@ Explicit Wait: Use the Explicit Wait when you want to wait for a specific
  condition to be true before proceeding. It is especially useful when waiting for elements that load asynchronously.
 
 Example:
-Implcit:
+Implicit:
 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
